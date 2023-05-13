@@ -218,6 +218,21 @@ The main() method of the program creates a new instance of a MyHashTable class a
 
 Finally, the program gets the size of each bucket in the hash table using the getBucketSizes() method and prints out the size of each bucket using a loop.
 
+And output of this code will be like this:
+``` java
+Bucket 0: 928 elements
+Bucket 1: 877 elements
+Bucket 2: 897 elements
+Bucket 3: 961 elements
+Bucket 4: 919 elements
+Bucket 5: 901 elements
+Bucket 6: 920 elements
+Bucket 7: 899 elements
+Bucket 8: 903 elements
+Bucket 9: 882 elements
+Bucket 10: 913 elements
+```
+
 ## Student Class:
 ``` java
 public class Student {
@@ -238,7 +253,7 @@ public class Student {
 Student class with two private instance variables name and gender. 
 It also contains a constructor that takes in two parameters name and gender to initialize the instance variables.
 
-While writing this code, I hava such kind of error in main function: "Type parameter 'Student' cannot be instantiated directly java".
+While writing this code, I hava such kind of error in main function: "Type parameter 'Student' cannot be instantiated directly".
 So, to fix this error, I define this class that can be used as the type parameter.
 
 
