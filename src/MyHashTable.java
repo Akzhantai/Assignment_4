@@ -69,6 +69,13 @@ public class MyHashTable<K, V> {
         return null;
     }
 
+    public boolean isEmpty() {
+            return size == 0;
+        }
+
+    public int size(){
+        return size;
+    }
     // Remove the key-value pair associated with a given key from the hash table
     public V remove(K key) {
         int index = hash(key);
@@ -129,5 +136,18 @@ public class MyHashTable<K, V> {
             }
         }
         return sizes;
+    }
+
+    public void putAll() {
+        int[] newTable = new int[M];
+        for (int i = 0; i < M; i++) {
+            HashNode<K, V> node = chainArray[i];
+            while (node != null) {
+                put(node.key, node.value);
+                newTable[i]++;
+                node = node.next;
+            }
+        }
+        return;
     }
 }
